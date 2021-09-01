@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ~
+    #- name: configure
+    #  run: 
     - name: make
       run: gcc.exe -D__DEBUG__ main.o  -o "Hello.exe" -L"D:/Dev-Cpp/lib"  -g3
     - name: make check
