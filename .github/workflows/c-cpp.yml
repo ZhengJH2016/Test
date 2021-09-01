@@ -16,7 +16,7 @@ jobs:
     - name: configure
       run: ./configure
     - name: make
-      run: make
+      run: gcc.exe -D__DEBUG__ main.o  -o "Hello.exe" -L"D:/Dev-Cpp/lib"  -g3
     - name: make check
       run: make check
     - name: make distcheck
